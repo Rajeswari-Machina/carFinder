@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "name": "Honda City ZX",
+    "brand": "Honda",
+    "fuel": "Petrol",
+    "seats": 5,
+    "price": 12000,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name"
+  },
+  {
+    "id": 2,
+    "name": "Hyundai Creta SX",
+    "brand": "Hyundai",
+    "fuel": "Diesel",
+    "seats": 5,
+    "price": 15000,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+  },
+  {
+    "id": 3,
+    "name": "Maruti Suzuki Swift VXi",
+    "brand": "Maruti Suzuki",
+    "fuel": "Petrol",
+    "seats": 5,
+    "price": 9000,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+  },
+  {
+    "id": 4,
+    "name": "Tata Nexon EV",
+    "brand": "Tata",
+    "fuel": "Electric",
+    "seats": 5,
+    "price": 18000,
+     "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+  },
+  {
+    "id": 5,
+    "name": "Kia Seltos GTX",
+    "brand": "Kia",
+    "fuel": "Diesel",
+    "seats": 5,
+    "price": 17000,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+  },
+  {
+    "id": 6,
+    "name": "Toyota Innova Crysta",
+    "brand": "Toyota",
+    "fuel": "Diesel",
+    "seats": 7,
+    "price": 22000,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+  },
+  {
+    "id": 7,
+    "name": "MG Hector Sharp",
+    "brand": "MG",
+    "fuel": "Petrol",
+    "seats": 5,
+    "price": 20000,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+  },
+  {
+    "id": 8,
+    "name": "Ford EcoSport Titanium",
+    "brand": "Ford",
+    "fuel": "Petrol",
+    "seats": 5,
+    "price": 13000,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+  },
+  {
+    "id": 9,
+    "name": "Renault Kwid Climber",
+    "brand": "Renault",
+    "fuel": "Petrol",
+    "seats": 5,
+    "price": 7000,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+  },
+  {
+    "id": 10,
+    "name": "Mahindra Thar LX",
+    "brand": "Mahindra",
+    "fuel": "Diesel",
+    "seats": 4,
+    "price": 19000,
+     "image": "https://via.placeholder.com/300x200?text=Car+Name"
+  },
+  {
+    "id": 11,
+    "name": "Volkswagen Polo GT",
+    "brand": "Volkswagen",
+    "fuel": "Petrol",
+    "seats": 5,
+    "price": 10500,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name"
+  },
+  {
+    "id": 12,
+    "name": "Skoda Rapid TSI",
+    "brand": "Skoda",
+    "fuel": "Petrol",
+    "seats": 5,
+    "price": 12500,
+     "image": "https://via.placeholder.com/300x200?text=Car+Name"
+  },
+  {
+    "id": 13,
+    "name": "Nissan Magnite XL",
+    "brand": "Nissan",
+    "fuel": "Petrol",
+    "seats": 5,
+    "price": 9500,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+  },
+  {
+    "id": 14,
+    "name": "Jeep Compass Limited",
+    "brand": "Jeep",
+    "fuel": "Diesel",
+    "seats": 5,
+    "price": 23000,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+  },
+  {
+    "id": 15,
+    "name": "BMW X1 sDrive",
+    "brand": "BMW",
+    "fuel": "Petrol",
+    "seats": 5,
+    "price": 38000,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name"
+  },
+  {
+    "id": 16,
+    "name": "Audi Q3 Premium",
+    "brand": "Audi",
+    "fuel": "Diesel",
+    "seats": 5,
+    "price": 42000,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+  },
+  {
+    "id": 17,
+    "name": "Mercedes-Benz GLA",
+    "brand": "Mercedes",
+    "fuel": "Diesel",
+    "seats": 5,
+    "price": 45000,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name"
+  },
+  {
+    "id": 18,
+    "name": "Volvo XC40 Recharge",
+    "brand": "Volvo",
+    "fuel": "Electric",
+    "seats": 5,
+    "price": 52000,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+  },
+  {
+    "id": 19,
+    "name": "Tata Tiago XE",
+    "brand": "Tata",
+    "fuel": "Petrol",
+    "seats": 5,
+    "price": 6500,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+  },
+  {
+    "id": 20,
+    "name": "Maruti Baleno Alpha",
+    "brand": "Maruti Suzuki",
+    "fuel": "Petrol",
+    "seats": 5,
+    "price": 8800,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+  },
+  {
+    "id": 21,
+    "name": "Toyota Fortuner GR-S",
+    "brand": "Toyota",
+    "fuel": "Diesel",
+    "seats": 7,
+    "price": 36000,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+  },
+  {
+    "id": 22,
+    "name": "Kia Carens Prestige",
+    "brand": "Kia",
+    "fuel": "Petrol",
+    "seats": 7,
+    "price": 16000,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+  },
+  {
+    "id": 23,
+    "name": "MG ZS EV Exclusive",
+    "brand": "MG",
+    "fuel": "Electric",
+    "seats": 5,
+    "price": 24999,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+  },
+  {
+    "id": 24,
+    "name": "Renault Triber RXT",
+    "brand": "Renault",
+    "fuel": "Petrol",
+    "seats": 7,
+    "price": 8900,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+  },
+  {
+    "id": 25,
+    "name": "Ford Aspire Titanium",
+    "brand": "Ford",
+    "fuel": "Diesel",
+    "seats": 5,
+    "price": 9200,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+  },
+  {
+    "id": 26,
+    "name": "Mahindra XUV700 AX7",
+    "brand": "Mahindra",
+    "fuel": "Diesel",
+    "seats": 7,
+    "price": 29000,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name"
+  },
+  {
+    "id": 27,
+    "name": "Skoda Kushaq Active",
+    "brand": "Skoda",
+    "fuel": "Petrol",
+    "seats": 5,
+    "price": 15000,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+  },
+  {
+    "id": 28,
+    "name": "Hyundai Venue SX",
+    "brand": "Hyundai",
+    "fuel": "Petrol",
+    "seats": 5,
+    "price": 13500,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name"
+  },
+  {
+    "id": 29,
+    "name": "Honda Amaze S",
+    "brand": "Honda",
+    "fuel": "Diesel",
+    "seats": 5,
+    "price": 10000,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name"
+  },
+  {
+    "id": 30,
+    "name": "Volkswagen Taigun GT",
+    "brand": "Volkswagen",
+    "fuel": "Petrol",
+    "seats": 5,
+    "price": 17000,
+    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+  }
+]

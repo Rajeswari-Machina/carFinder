@@ -6,7 +6,7 @@
     "fuel": "Petrol",
     "seats": 5,
     "price": 12000,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name"
+    "image": "/images/car1_tata.jpg"
   },
   {
     "id": 2,

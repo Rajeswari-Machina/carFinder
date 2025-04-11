@@ -1,29 +1,25 @@
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import ThemeToggle from '@/utils/ThemeToggle';
-import Filters from './Filters';
-import Link from "next/link";
-export default function Navbar({onSearch}){
-  return(
-    <>
-  <Box >
-    <AppBar  position="static">
-      <Toolbar sx={{display:"flex",backgroundColor:"black" ,flexDirection:"row",justifyContent:"space-between",alignContent:"center",gap:"4"}} >
-          <Filters onChange={onSearch} />
-        </Toolbar>
-        <Link href="/wishlist" className="text-white font-medium hover:underline">
-          ❤️ Wishlist
-        </Link>
-
-        <ThemeToggle/>
-      </AppBar>
-    </Box>
-    <Box>
-      <h1 style={{color:"black",fontSize:"40px",textAlign:"center"}}>Car Finder</h1>
-      <h3 style={{color:"black",fontSize:"20px",textAlign:"center"}}>Find your dream car</h3>
-    </Box>
-    </>
-    
+// components/Navbar.js
+import { AppBar, Toolbar, Typography, IconButton } from '@mui/material';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import Link from 'next/link';
+export default function Navbar({ toggleTheme, mode }) {
+  return (
+    <AppBar sx={{ position:"fixed",top:0,backgroundColor: mode === 'light' ? '#000' : '#121212' }}>
+      <Toolbar className="flex justify-center">
+        <Typography variant="h6" sx={{marginLeft:"40%",textAlign:"center",fontFamily:"sans-serif",fontSize:"24px",fontWeight:"bold"}} >
+          Car Explorer
+        </Typography>
+        <IconButton onClick={toggleTheme} color="inherit">
+          {mode === 'light' ? <Brightness4Icon /> : <Brightness7Icon />}
+        </IconButton>
+        <IconButton color="inherit" sx={{marginLeft:"auto"}}>
+          <Link href="/wishlist" style={{ textDecoration: "none", color: "inherit" }}>
+            <FavoriteIcon/>
+          </Link>
+        </IconButton>
+      </Toolbar>
+    </AppBar>
   );
 }

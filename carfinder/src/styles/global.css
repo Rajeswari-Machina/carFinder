@@ -1,0 +1,12 @@
+/* globals.css */
+body {
+  transition: background 0.3s, color 0.3s;
+}
+html.dark {
+  background-color: #121212;
+  color: white;
+}
+html.light {
+  background-color: #f5f5f5;
+  color: black;
+}

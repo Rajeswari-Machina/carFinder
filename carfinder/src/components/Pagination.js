@@ -1,18 +1,29 @@
-import * as React from 'react';
-import Typography from '@mui/material/Typography';
+// components/Pagination.js
+import React from 'react';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 
-export default function PaginationControlled() {
-  const [page, setPage] = React.useState(1);
+const PaginationControlled = ({ totalItems, itemsPerPage, currentPage, onPageChange }) => {
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+
   const handleChange = (event, value) => {
-    setPage(value);
+    onPageChange(value);
   };
+
+  if (totalPages <= 1) return null; // Hide if only 1 page
 
   return (
     <Stack spacing={2}>
-      <Typography>Page: {page}</Typography>
-      <Pagination count={10} page={page} onChange={handleChange} />
+      <Pagination
+        count={totalPages}
+        page={currentPage}
+        onChange={handleChange}
+        color="primary"
+        size="large"
+        shape="rounded"
+      />
     </Stack>
   );
-}
+};
+
+export default PaginationControlled;

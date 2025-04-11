@@ -1,117 +1,139 @@
+// components/Filters.js
 import SearchIcon from '@mui/icons-material/Search';
-import {useEffect,useState} from 'react';
+import {
+  Box,
+  TextField,
+  IconButton,
+  MenuItem,
+  Paper,
+  FormControl,
+  InputLabel,
+  Select,
+  Grid,
+  Autocomplete
+} from '@mui/material';
+import { useEffect, useState } from 'react';
 import data from "@/data/mock/cars.json";
 import fetchCars from '@/utils/fetchCars';
+
 export default function Filters({ onChange }) {
-  const styles={
-    select: "p-4 m-8 bg-black dark:bg-white rounded-lg shadow-md text-white dark:text-black font-semibold",
-  }
-  const [suggestions, setSuggestions] = useState([]);
   const [query, setQuery] = useState("");
-  const [seating, setSeating] = useState("");
-  const [fuel, setFuel] = useState("");
-  const [price, setPrice] = useState("");
+  const [suggestions, setSuggestions] = useState([]);
   const [brand, setBrand] = useState("");
-  const handleSearch = ({ query, brand, price, fuel, seating }) => {
-    const result =  fetchCars({ query, brand, price, fuel, seating });
-    if (result) {
-      console.log("Search results:", result);
-    }
-    console.log("Search triggered with:", { query, brand, price, fuel, seating });
-    if (onChange) {
-      onChange(result);
-    }
+  const [price, setPrice] = useState("");
+  const [fuel, setFuel] = useState("");
+  const [seating, setSeating] = useState("");
+
+  const handleSearch = () => {
+    const result = fetchCars({ query, brand, price, fuel, seating });
+    if (result && onChange) onChange(result);
   };
 
   useEffect(() => {
-    const fetchSuggestions = () => {
-      const allSuggestions = data.map(car => car.name);
-      const filteredSuggestions = allSuggestions.filter(suggestion =>
-        suggestion.toLowerCase().includes(query.toLowerCase())
-      );
-      setSuggestions(filteredSuggestions.slice(0, 5));
-    };
-    fetchSuggestions();
+    const allSuggestions = data.map(car => car.name);
+    const filteredSuggestions = allSuggestions.filter(name =>
+      name.toLowerCase().includes(query.toLowerCase())
+    );
+    setSuggestions(filteredSuggestions.slice(0, 5));
   }, [query]);
 
-  return (    
-        <div className="flex-row justify-between items-center ">
-          <div className="relative">
-            <input
-              type="text"
-              placeholder="Search for cars..."
-              style={{width:"80%",height:"10px ", borderColor:"gold",backgroundColor:"black",color:"white",borderRadius:"5px",padding:"10px"}}
-              value={query}
-              onChange={e => setQuery(e.target.value)}
+  return (
+    <Paper elevation={3} sx={{ padding: 3, maxWidth: 1000, mx: "auto", mt: 4 }}>
+      <Box display="flex" alignItems="center" gap={2} mb={3}>
+        <Autocomplete
+          freeSolo
+          options={suggestions}
+          inputValue={query}
+          onInputChange={(e, newValue) => setQuery(newValue)}
+          onChange={(e, value) => setQuery(value)}
+          fullWidth
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              label="Search for cars..."
+              variant="outlined"
+              fullWidth
             />
-            <button
-              style={{border:"none",background:"none",cursor:"pointer"}}
-              onClick={() => handleSearch({ query, brand, price, fuel, seating })}
+          )}
+        />
+        <IconButton
+          color="primary"
+          onClick={handleSearch}
+          sx={{ bgcolor: 'primary.main', color: 'white', '&:hover': { bgcolor: 'primary.dark' } }}
+        >
+          <SearchIcon />
+        </IconButton>
+      </Box>
+
+      <Grid container spacing={2}>
+        <Grid item xs={12} sm={6} md={3}>
+          <FormControl fullWidth>
+            <InputLabel>Brand</InputLabel>
+            <Select
+              value={brand}
+              label="Brand"
+              onChange={e => setBrand(e.target.value)}
             >
-              <SearchIcon  sx={{width:"100" ,height:"100%",color:"white",marginTop:"10px",alignSelf:"center"}}/>
-            </button>
-          </div>
-          
-          {suggestions.length > 0 && (
-              <ul className="absolute bg-white dark:bg-gray-800 rounded-lg shadow-md mt-2 top-0 left-0 w-full z-10">
-                { query?suggestions.map((suggestion, index) => (
-                  <li
-                    key={index}
-                    className="p-2 hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer"
-                    onClick={() => setQuery(suggestion)}
-                  >
-                    {suggestion}
-                  </li>
-                )):null}
-              </ul>
-            )}
-          <div sx={{display:"flex",flexDirection:"row",justifyContent:"space-between"}}>
-          <select
-            className={`${styles.select}`}
-            onChange={e => setBrand(e.target.value)}
-          >
-            <option value="">All Brands</option>
-            <option value="toyota">Toyota</option>
-            <option value="honda">Honda</option>
-            <option value="ford">Ford</option>
-            <option value="bmw">BMW</option>
-            <option value="audi">Audi</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="tesla">Tesla</option>
-          </select>
-          <select
-            className={`${styles.select}`}
-            onChange={e => setPrice(e.target.value)}
-          >
-            <option value="">All Prices</option>
-            <option value="50000">0 - 50,000</option>
-            <option value="100000">50,000 - 1,00,00</option>
-            <option value="500000">1,00,000-5,00,000</option>
-            <option value="500000">above 5,00,000</option>
-            <option value="100000">above 10,00,000</option>
-          </select>
-          <select
-            className={`${styles.select}`}
-            onChange={e => setFuel(e.target.value)}
-          >
-            <option value="">All Fuels</option>
-            <option value="petrol">Petrol</option>
-            <option value="diesel">Diesel</option>
-            <option value="electric">Electric</option>
-            <option value="hybrid">Hybrid</option>
-          </select>
-          <select
-            className={`${styles.select}`}
-            onChange={e => setSeating(e.target.value)}
-          >
-            <option value="">Seating</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-          </select>
-          </div>
-        </div>
- 
+              <MenuItem value="">All Brands</MenuItem>
+              {['Toyota', 'Honda', 'Ford', 'BMW', 'Audi', 'Mercedes', 'Tesla'].map(b => (
+                <MenuItem key={b} value={b.toLowerCase()}>{b}</MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+        </Grid>
+
+        <Grid item xs={12} sm={6} md={3}>
+          <FormControl fullWidth>
+            <InputLabel>Price</InputLabel>
+            <Select
+              value={price}
+              label="Price"
+              onChange={e => setPrice(e.target.value)}
+            >
+              <MenuItem value="">All Prices</MenuItem>
+              <MenuItem value="50000">0 - 50,000</MenuItem>
+              <MenuItem value="100000">50,000 - 1,00,000</MenuItem>
+              <MenuItem value="500000">1,00,000 - 5,00,000</MenuItem>
+              <MenuItem value="1000000">Above 5,00,000</MenuItem>
+              <MenuItem value="10000000">Above 10,00,000</MenuItem>
+            </Select>
+          </FormControl>
+        </Grid>
+
+        <Grid item xs={12} sm={6} md={3}>
+          <FormControl fullWidth>
+            <InputLabel>Fuel</InputLabel>
+            <Select
+              value={fuel}
+              label="Fuel"
+              onChange={e => setFuel(e.target.value)}
+            >
+              <MenuItem value="">All Fuels</MenuItem>
+              <MenuItem value="petrol">Petrol</MenuItem>
+              <MenuItem value="diesel">Diesel</MenuItem>
+              <MenuItem value="electric">Electric</MenuItem>
+              <MenuItem value="hybrid">Hybrid</MenuItem>
+            </Select>
+          </FormControl>
+        </Grid>
+
+        <Grid item xs={12} sm={6} md={3}>
+          <FormControl fullWidth>
+            <InputLabel>Seating</InputLabel>
+            <Select
+              value={seating}
+              label="Seating"
+              onChange={e => setSeating(e.target.value)}
+            >
+              <MenuItem value="">Any</MenuItem>
+              {[4, 5, 6, 7].map(seat => (
+                <MenuItem key={seat} value={seat}>{seat}</MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+        </Grid>
+      </Grid>
+      
+    </Paper>
   );
 }

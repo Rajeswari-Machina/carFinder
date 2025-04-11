@@ -1,8 +1,8 @@
 import CarDetails from "@/components/CarDetails";
-export default function CarDetailsPage() {
+export default function CarDetailsPage({ toggleTheme, mode }) {
   return(
-    <div>
-      <CarDetails/>
+    <div sx={{backgroundColor:mode === "dark" ? "black":"white"}}>
+      <CarDetails toggleTheme={toggleTheme} mode={mode}/>
     </div>
   )
 }

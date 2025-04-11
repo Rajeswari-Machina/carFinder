@@ -16,17 +16,20 @@ export default function CarCard({ car }) {
   return (
     <Card
       sx={{
-        width:'100%',
-        border: "2px solid blue",
+        width:"100%",
         borderRadius: "10px",
         color: "black",
         boxShadow: "0 0 5px gray",
         backgroundColor: "rgb(0,0,0,0.1)",
+      "&:hover": {
+        transform: "scale(1.02)",
+        transition: "transform 0.2s ease-in-out",
+      },
       }}
     >
       <Link href={`/car/${car.id}`} style={{ textDecoration: "none" }}>
           <CardMedia
-            sx={{ height: 200, width: 200, padding: "10px" }}
+            sx={{ height: 200, width:"100%", padding: "10px" }}
             image={car.image}
             title={car.name}
           />

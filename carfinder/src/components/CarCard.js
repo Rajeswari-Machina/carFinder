@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Card, CardContent, CardMedia, Typography, Stack, Chip } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import useWishlist from "@/hooks/useWishlist"; // Adjust path if needed
+import useWishlist from "@/hooks/useWishlist"; 
 
 export default function CarCard({ car }) {
   const [wishlist, toggleWishlist] = useWishlist();
@@ -9,7 +9,7 @@ export default function CarCard({ car }) {
   const isWished = wishlist.some((c) => c.id === car.id);
 
   const handleWishlist = (e) => {
-    e.preventDefault(); // Prevent navigation when clicking heart
+    e.preventDefault(); 
     toggleWishlist(car);
   };
 

@@ -9,7 +9,7 @@ export default function Navbar({ toggleTheme, mode }) {
     <AppBar sx={{ position:"fixed",top:0,backgroundColor: mode === 'light' ? '#000' : '#121212' }}>
       <Toolbar className="flex justify-center">
         <Typography variant="h6" sx={{marginLeft:"40%",textAlign:"center",fontFamily:"sans-serif",fontSize:"24px",fontWeight:"bold"}} >
-          Car Explorer
+          Car Finder
         </Typography>
         <IconButton onClick={toggleTheme} color="inherit">
           {mode === 'light' ? <Brightness4Icon /> : <Brightness7Icon />}

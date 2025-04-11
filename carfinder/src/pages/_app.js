@@ -1,9 +1,9 @@
-// pages/_app.js
 import '@/styles/global.css';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { useEffect, useMemo, useState } from 'react';
 import Navbar from '@/components/Navbar';
+import { ToastContainer } from "react-toastify";
 export default function MyApp({ Component, pageProps }) {
   const [mode, setMode] = useState('light');
 
@@ -49,6 +49,7 @@ export default function MyApp({ Component, pageProps }) {
       <>
         <Navbar toggleTheme={toggleTheme} mode={mode} />
         <Component {...pageProps} toggleTheme={toggleTheme} mode={mode} />
+        <ToastContainer position="top-right" autoClose={1500} theme="colored" />
       </>
     </ThemeProvider>
   );

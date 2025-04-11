@@ -1,11 +1,10 @@
-// pages/index.js
 import React, { useState } from "react";
 import Filters from "@/components/Filters";
 import CarCard from "@/components/CarCard";
 import Pagination from "@/components/Pagination";
-import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import useMediaQuery from '@mui/material/useMediaQuery';
+import data from '@/data/mock/cars.json'
 export default function Home({ toggleTheme, mode }) {
   const [searchResults, setSearchResults] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -13,7 +12,7 @@ export default function Home({ toggleTheme, mode }) {
 
   const handleSearch = (results) => {
     setSearchResults(results);
-    setCurrentPage(1); // Reset to first page after new search
+    setCurrentPage(1); 
   };
 
   const indexOfLastCar = currentPage * carsPerPage;
@@ -25,10 +24,18 @@ export default function Home({ toggleTheme, mode }) {
   };
   
   const isSmallScreen = useMediaQuery('(max-width:800px)');
-  return (
-    
-    <>
+  React.useEffect(() => {
+    const fetchInitialCars = async() => {
       
+      const initialCars = data.slice(0,5);
+      setSearchResults(initialCars);
+    };
+
+    fetchInitialCars();
+  }, []);
+
+  return (
+    <>
       <div
         style={{
           position: "relative",
@@ -49,12 +56,16 @@ export default function Home({ toggleTheme, mode }) {
             color: "white",
           }}
         >
-          <h1 className="text-4xl font-bold">Find Your Dream Car</h1>
-          <p className="text-lg mt-2">Explore a wide range of cars</p>
+          <h1 className="text-4xl font-bold">
+            <span className="animated-text">Find Your Dream Car</span>
+          </h1>
+          <p className="text-lg mt-2">
+            <span className="animated-text">Explore a wide range of cars</span>
+          </p>
         </div>
       </div>
       <div style={{ marginBottom: "5%" }}>
-        <Filters isSmallScreen={isSmallScreen} onChange={handleSearch} />
+        <Filters onChange={handleSearch} />
       </div>
       <div
         style={{
@@ -83,7 +94,33 @@ export default function Home({ toggleTheme, mode }) {
         />
       </div>
 
-      <ToastContainer position="top-right" autoClose={1500} theme="colored" />
+      <style jsx>{`
+        .animated-text {
+          display: inline-block;
+          overflow: hidden;
+          white-space: nowrap;
+          animation: typing 3s steps(30, end), blink 0.5s step-end infinite alternate;
+          border-right: 2px solid white;
+        }
+
+        @keyframes typing {
+          from {
+            width: 0;
+          }
+          to {
+            width: 100%;
+          }
+        }
+
+        @keyframes blink {
+          from {
+            border-color: transparent;
+          }
+          to {
+            border-color: white;
+          }
+        }
+      `}</style>
     </>
   );
 }

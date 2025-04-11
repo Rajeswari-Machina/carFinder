@@ -6,8 +6,8 @@ export default function WishlistPage({ toggleTheme, mode }) {
   const [wishlist] = useWishlist();
   const isSmallScreen = useMediaQuery('(max-width:860px)');
   return (
-    <div className="p-6">
-      <h2 className="text-2xl font-bold mb-6">Your Wishlist</h2>
+    <div style={{margin:"6% 2%"}}>
+      <h2 style={{textAlign:"center"}}>Your Wishlist</h2>
 
       {wishlist.length > 0 ? (
         <div  style={{

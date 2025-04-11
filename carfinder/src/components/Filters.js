@@ -133,7 +133,6 @@ export default function Filters({ onChange }) {
           </FormControl>
         </Grid>
       </Grid>
-      
     </Paper>
   );
 }

@@ -15,7 +15,7 @@
     "fuel": "Diesel",
     "seats": 5,
     "price": 15000,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+    "image": "/images/car2.jpg"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "fuel": "Petrol",
     "seats": 5,
     "price": 9000,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+    "image": "/images/car3.webp"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "fuel": "Electric",
     "seats": 5,
     "price": 18000,
-     "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+    "image": "/images/car1_tata.jpg"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "fuel": "Diesel",
     "seats": 5,
     "price": 17000,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+    "image": "/images/car2.jpg"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "fuel": "Diesel",
     "seats": 7,
     "price": 22000,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+    "image": "/images/car3.webp"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "fuel": "Petrol",
     "seats": 5,
     "price": 20000,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+    "image": "/images/car1_tata.jpg"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "fuel": "Petrol",
     "seats": 5,
     "price": 13000,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+    "image": "/images/car2.jpg"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "fuel": "Petrol",
     "seats": 5,
     "price": 7000,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+    "image": "/images/car3.webp"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "fuel": "Diesel",
     "seats": 4,
     "price": 19000,
-     "image": "https://via.placeholder.com/300x200?text=Car+Name"
+    "image": "/images/car1_tata.jpg"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "fuel": "Petrol",
     "seats": 5,
     "price": 10500,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name"
+    "image": "/images/car2.jpg"
   },
   {
     "id": 12,
@@ -105,7 +105,7 @@
     "fuel": "Petrol",
     "seats": 5,
     "price": 12500,
-     "image": "https://via.placeholder.com/300x200?text=Car+Name"
+    "image": "/images/car3.webp"
   },
   {
     "id": 13,
@@ -114,7 +114,7 @@
     "fuel": "Petrol",
     "seats": 5,
     "price": 9500,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+    "image": "/images/car1_tata.jpg"
   },
   {
     "id": 14,
@@ -123,7 +123,7 @@
     "fuel": "Diesel",
     "seats": 5,
     "price": 23000,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+    "image": "/images/car2.jpg"
   },
   {
     "id": 15,
@@ -132,7 +132,7 @@
     "fuel": "Petrol",
     "seats": 5,
     "price": 38000,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name"
+    "image": "/images/car3.webp"
   },
   {
     "id": 16,
@@ -141,7 +141,7 @@
     "fuel": "Diesel",
     "seats": 5,
     "price": 42000,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+    "image": "/images/car1_tata.jpg"
   },
   {
     "id": 17,
@@ -150,7 +150,7 @@
     "fuel": "Diesel",
     "seats": 5,
     "price": 45000,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name"
+    "image": "/images/car2.jpg"
   },
   {
     "id": 18,
@@ -159,7 +159,7 @@
     "fuel": "Electric",
     "seats": 5,
     "price": 52000,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+    "image": "/images/car3.webp"
   },
   {
     "id": 19,
@@ -168,7 +168,7 @@
     "fuel": "Petrol",
     "seats": 5,
     "price": 6500,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+    "image": "/images/car1_tata.jpg"
   },
   {
     "id": 20,
@@ -177,7 +177,7 @@
     "fuel": "Petrol",
     "seats": 5,
     "price": 8800,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+    "image": "/images/car2.jpg"
   },
   {
     "id": 21,
@@ -186,7 +186,7 @@
     "fuel": "Diesel",
     "seats": 7,
     "price": 36000,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+    "image": "/images/car3.webp"
   },
   {
     "id": 22,
@@ -195,7 +195,7 @@
     "fuel": "Petrol",
     "seats": 7,
     "price": 16000,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+    "image": "/images/car1_tata.jpg"
   },
   {
     "id": 23,
@@ -204,7 +204,7 @@
     "fuel": "Electric",
     "seats": 5,
     "price": 24999,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+    "image": "/images/car2.jpg"
   },
   {
     "id": 24,
@@ -213,7 +213,7 @@
     "fuel": "Petrol",
     "seats": 7,
     "price": 8900,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+    "image": "/images/car3.webp"
   },
   {
     "id": 25,
@@ -222,7 +222,7 @@
     "fuel": "Diesel",
     "seats": 5,
     "price": 9200,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+    "image": "/images/car1_tata.jpg"
   },
   {
     "id": 26,
@@ -231,7 +231,7 @@
     "fuel": "Diesel",
     "seats": 7,
     "price": 29000,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name"
+    "image": "/images/car2.jpg"
   },
   {
     "id": 27,
@@ -240,7 +240,7 @@
     "fuel": "Petrol",
     "seats": 5,
     "price": 15000,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+    "image": "/images/car3.webp"
   },
   {
     "id": 28,
@@ -249,7 +249,7 @@
     "fuel": "Petrol",
     "seats": 5,
     "price": 13500,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name"
+    "image": "/images/car1_tata.jpg"
   },
   {
     "id": 29,
@@ -258,7 +258,7 @@
     "fuel": "Diesel",
     "seats": 5,
     "price": 10000,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name"
+    "image": "/images/car2.jpg"
   },
   {
     "id": 30,
@@ -267,6 +267,6 @@
     "fuel": "Petrol",
     "seats": 5,
     "price": 17000,
-    "image": "https://via.placeholder.com/300x200?text=Car+Name" 
+    "image": "/images/car3.webp"
   }
 ]

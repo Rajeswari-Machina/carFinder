@@ -84,14 +84,16 @@ export default function Home({ toggleTheme, mode }) {
       </div>
 
       <div style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}>
-        <Pagination
-          totalItems={searchResults.length}
-          itemsPerPage={carsPerPage}
-          currentPage={currentPage}
-          onPageChange={(pageNumber) => {
-            handlePageChange(pageNumber);
-          }}
-        />
+        {searchResults.length > 0 && (
+          <Pagination
+            totalItems={searchResults.length}
+            itemsPerPage={carsPerPage}
+            currentPage={currentPage}
+            onPageChange={(pageNumber) => {
+              handlePageChange(pageNumber);
+            }}
+          />
+        )}
       </div>
 
       <style jsx>{`

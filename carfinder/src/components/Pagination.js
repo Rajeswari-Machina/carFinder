@@ -10,7 +10,7 @@ const PaginationControlled = ({ totalItems, itemsPerPage, currentPage, onPageCha
     onPageChange(value);
   };
 
-  if (totalPages <= 1) return null; // Hide if only 1 page
+  if (totalPages <= 1) return null; 
 
   return (
     <Stack spacing={2}>

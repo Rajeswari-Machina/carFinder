@@ -8,11 +8,12 @@ import useWishlist from '@/hooks/useWishlist';
 import { useRouter } from 'next/router';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import data from "@/data/mock/cars.json";
+import useMediaQuery  from '@mui/material/useMediaQuery';
 export default function CarDetails({ toggleTheme, mode }) {
   const router = useRouter();
   const { id } = router.query;
   const isDark = mode === 'dark';
-
+  const isMobile = useMediaQuery('(max-width:600px)')
   const [wishlist, toggleWishlist] = useWishlist();
   const handleWishlist = (e) => {
     e.preventDefault(); 
@@ -84,7 +85,7 @@ export default function CarDetails({ toggleTheme, mode }) {
               color: isDark ? 'gray.400' : 'gray.600',
               gutterBottom: true,
               overflow: 'hidden',
-              whiteSpace: 'nowrap',
+              whiteSpace: isMobile?'normal':'nowrap',
               animation: 'typing 4s steps(40, end), blink 0.5s step-end infinite',
               borderRight: '2px solid',
                 '@keyframes typing': {

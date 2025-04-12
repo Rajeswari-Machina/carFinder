@@ -123,7 +123,7 @@ export default function CarDetails({ toggleTheme, mode }) {
                 { label: 'Model', value: car.model },
                 { label: 'Price', value: car.price, isHighlighted: true },
                 { label: 'Seating Capacity', value: car.seats },
-                { label: 'Color', value: car.availableColors.join(', ') },
+                { label: 'Color', value: car?.availableColors.join(',')},
                 { label: 'Fuel Type', value: car.fuel },
                 { label: 'Year', value: car.year },
               ].map((row, index) => (

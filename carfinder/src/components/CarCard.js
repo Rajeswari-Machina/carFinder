@@ -48,7 +48,7 @@ export default function CarCard({ car }) {
           ₹{car.price}/- Only
         </Typography>
         <Typography variant="subtitle1" sx={{ fontWeight: 600, color: "blue", marginBottom: "5px" }}>
-          Available in {car.availableColors.join(',')} colors 
+          Available in {Array.isArray(car?.availableColors) ? car.availableColors.join(', ') : car.availableColors} colors
         </Typography>
           <Typography variant="body2" color="text.secondary">
             {car.description}

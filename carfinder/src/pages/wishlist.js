@@ -16,7 +16,7 @@ export default function WishlistPage({ toggleTheme, mode }) {
           gap: "20px",
         }}>
           {wishlist.map((car, index) => (
-            <CarCard key={index} car={car} />
+            <CarCard key={index} car={car} mode={mode}/>
           ))}
         </div>
       ) : (

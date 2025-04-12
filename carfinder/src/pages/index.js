@@ -76,7 +76,7 @@ export default function Home({ toggleTheme, mode }) {
       >
         {currentCars.length > 0 ? (
           currentCars.map((car, index) => (
-            <CarCard key={car.id || index} car={car} />
+            <CarCard key={car.id || index} car={car} mode={mode} />
           ))
         ) : (
           <p className="col-span-full text-center">No results found</p>

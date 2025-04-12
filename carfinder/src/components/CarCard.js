@@ -3,7 +3,7 @@ import { Card, CardContent, CardMedia, Typography, Stack, Chip } from "@mui/mate
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import useWishlist from "@/hooks/useWishlist"; 
 
-export default function CarCard({ car }) {
+export default function CarCard({ car ,mode}) {
   const [wishlist, toggleWishlist] = useWishlist();
 
   const isWished = wishlist.some((c) => c.id === car.id);
@@ -36,7 +36,7 @@ export default function CarCard({ car }) {
       </Link>
       <CardContent>
           <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <Typography gutterBottom variant="h5">
+            <Typography gutterBottom variant="h5" sx={{ color: mode === "dark" ? "white" : "black" }}>
               {car.name}
             </Typography>
             <FavoriteIcon

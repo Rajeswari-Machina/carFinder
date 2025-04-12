@@ -6,7 +6,11 @@
     "fuel": "Petrol",
     "seats": 5,
     "price": 12000,
-    "image": "/images/car1_tata.jpg"
+    "image": "/images/car1_tata.jpg",
+    "description": "A premium sedan with advanced features and great mileage.",
+    "model": "City ZX",
+    "year": 2022,
+    "availableColors": ["White", "Silver", "Black"]
   },
   {
     "id": 2,
@@ -15,7 +19,11 @@
     "fuel": "Diesel",
     "seats": 5,
     "price": 15000,
-    "image": "/images/car2.jpg"
+    "image": "/images/car2.jpg",
+    "description": "A compact SUV with a bold design and powerful engine.",
+    "model": "Creta SX",
+    "year": 2021,
+    "availableColors": ["Red", "Blue", "Grey"]
   },
   {
     "id": 3,
@@ -24,7 +32,11 @@
     "fuel": "Petrol",
     "seats": 5,
     "price": 9000,
-    "image": "/images/car3.webp"
+    "image": "/images/car3.webp",
+    "description": "A sporty hatchback with excellent fuel efficiency.",
+    "model": "Swift VXi",
+    "year": 2020,
+    "availableColors": ["White", "Red", "Blue"]
   },
   {
     "id": 4,
@@ -33,7 +45,11 @@
     "fuel": "Electric",
     "seats": 5,
     "price": 18000,
-    "image": "/images/car1_tata.jpg"
+    "image": "/images/car1_tata.jpg",
+    "description": "An electric SUV with cutting-edge technology and safety features.",
+    "model": "Nexon EV",
+    "year": 2023,
+    "availableColors": ["Blue", "White", "Green"]
   },
   {
     "id": 5,
@@ -42,7 +58,11 @@
     "fuel": "Diesel",
     "seats": 5,
     "price": 17000,
-    "image": "/images/car2.jpg"
+    "image": "/images/car2.jpg",
+    "description": "A stylish SUV with premium interiors and advanced features.",
+    "model": "Seltos GTX",
+    "year": 2022,
+    "availableColors": ["Black", "Silver", "Red"]
   },
   {
     "id": 6,
@@ -51,7 +71,11 @@
     "fuel": "Diesel",
     "seats": 7,
     "price": 22000,
-    "image": "/images/car3.webp"
+    "image": "/images/car3.webp",
+    "description": "A spacious MPV with unmatched comfort and reliability.",
+    "model": "Innova Crysta",
+    "year": 2021,
+    "availableColors": ["White", "Grey", "Black"]
   },
   {
     "id": 7,
@@ -60,7 +84,11 @@
     "fuel": "Petrol",
     "seats": 5,
     "price": 20000,
-    "image": "/images/car1_tata.jpg"
+    "image": "/images/car1_tata.jpg",
+    "description": "A feature-packed SUV with a luxurious cabin.",
+    "model": "Hector Sharp",
+    "year": 2022,
+    "availableColors": ["Red", "White", "Silver"]
   },
   {
     "id": 8,
@@ -69,7 +97,11 @@
     "fuel": "Petrol",
     "seats": 5,
     "price": 13000,
-    "image": "/images/car2.jpg"
+    "image": "/images/car2.jpg",
+    "description": "A compact SUV with sporty looks and agile handling.",
+    "model": "EcoSport Titanium",
+    "year": 2020,
+    "availableColors": ["Blue", "Black", "White"]
   },
   {
     "id": 9,
@@ -78,7 +110,11 @@
     "fuel": "Petrol",
     "seats": 5,
     "price": 7000,
-    "image": "/images/car3.webp"
+    "image": "/images/car3.webp",
+    "description": "A budget-friendly hatchback with a rugged design.",
+    "model": "Kwid Climber",
+    "year": 2021,
+    "availableColors": ["Orange", "White", "Silver"]
   },
   {
     "id": 10,
@@ -87,186 +123,10 @@
     "fuel": "Diesel",
     "seats": 4,
     "price": 19000,
-    "image": "/images/car1_tata.jpg"
-  },
-  {
-    "id": 11,
-    "name": "Volkswagen Polo GT",
-    "brand": "Volkswagen",
-    "fuel": "Petrol",
-    "seats": 5,
-    "price": 10500,
-    "image": "/images/car2.jpg"
-  },
-  {
-    "id": 12,
-    "name": "Skoda Rapid TSI",
-    "brand": "Skoda",
-    "fuel": "Petrol",
-    "seats": 5,
-    "price": 12500,
-    "image": "/images/car3.webp"
-  },
-  {
-    "id": 13,
-    "name": "Nissan Magnite XL",
-    "brand": "Nissan",
-    "fuel": "Petrol",
-    "seats": 5,
-    "price": 9500,
-    "image": "/images/car1_tata.jpg"
-  },
-  {
-    "id": 14,
-    "name": "Jeep Compass Limited",
-    "brand": "Jeep",
-    "fuel": "Diesel",
-    "seats": 5,
-    "price": 23000,
-    "image": "/images/car2.jpg"
-  },
-  {
-    "id": 15,
-    "name": "BMW X1 sDrive",
-    "brand": "BMW",
-    "fuel": "Petrol",
-    "seats": 5,
-    "price": 38000,
-    "image": "/images/car3.webp"
-  },
-  {
-    "id": 16,
-    "name": "Audi Q3 Premium",
-    "brand": "Audi",
-    "fuel": "Diesel",
-    "seats": 5,
-    "price": 42000,
-    "image": "/images/car1_tata.jpg"
-  },
-  {
-    "id": 17,
-    "name": "Mercedes-Benz GLA",
-    "brand": "Mercedes",
-    "fuel": "Diesel",
-    "seats": 5,
-    "price": 45000,
-    "image": "/images/car2.jpg"
-  },
-  {
-    "id": 18,
-    "name": "Volvo XC40 Recharge",
-    "brand": "Volvo",
-    "fuel": "Electric",
-    "seats": 5,
-    "price": 52000,
-    "image": "/images/car3.webp"
-  },
-  {
-    "id": 19,
-    "name": "Tata Tiago XE",
-    "brand": "Tata",
-    "fuel": "Petrol",
-    "seats": 5,
-    "price": 6500,
-    "image": "/images/car1_tata.jpg"
-  },
-  {
-    "id": 20,
-    "name": "Maruti Baleno Alpha",
-    "brand": "Maruti Suzuki",
-    "fuel": "Petrol",
-    "seats": 5,
-    "price": 8800,
-    "image": "/images/car2.jpg"
-  },
-  {
-    "id": 21,
-    "name": "Toyota Fortuner GR-S",
-    "brand": "Toyota",
-    "fuel": "Diesel",
-    "seats": 7,
-    "price": 36000,
-    "image": "/images/car3.webp"
-  },
-  {
-    "id": 22,
-    "name": "Kia Carens Prestige",
-    "brand": "Kia",
-    "fuel": "Petrol",
-    "seats": 7,
-    "price": 16000,
-    "image": "/images/car1_tata.jpg"
-  },
-  {
-    "id": 23,
-    "name": "MG ZS EV Exclusive",
-    "brand": "MG",
-    "fuel": "Electric",
-    "seats": 5,
-    "price": 24999,
-    "image": "/images/car2.jpg"
-  },
-  {
-    "id": 24,
-    "name": "Renault Triber RXT",
-    "brand": "Renault",
-    "fuel": "Petrol",
-    "seats": 7,
-    "price": 8900,
-    "image": "/images/car3.webp"
-  },
-  {
-    "id": 25,
-    "name": "Ford Aspire Titanium",
-    "brand": "Ford",
-    "fuel": "Diesel",
-    "seats": 5,
-    "price": 9200,
-    "image": "/images/car1_tata.jpg"
-  },
-  {
-    "id": 26,
-    "name": "Mahindra XUV700 AX7",
-    "brand": "Mahindra",
-    "fuel": "Diesel",
-    "seats": 7,
-    "price": 29000,
-    "image": "/images/car2.jpg"
-  },
-  {
-    "id": 27,
-    "name": "Skoda Kushaq Active",
-    "brand": "Skoda",
-    "fuel": "Petrol",
-    "seats": 5,
-    "price": 15000,
-    "image": "/images/car3.webp"
-  },
-  {
-    "id": 28,
-    "name": "Hyundai Venue SX",
-    "brand": "Hyundai",
-    "fuel": "Petrol",
-    "seats": 5,
-    "price": 13500,
-    "image": "/images/car1_tata.jpg"
-  },
-  {
-    "id": 29,
-    "name": "Honda Amaze S",
-    "brand": "Honda",
-    "fuel": "Diesel",
-    "seats": 5,
-    "price": 10000,
-    "image": "/images/car2.jpg"
-  },
-  {
-    "id": 30,
-    "name": "Volkswagen Taigun GT",
-    "brand": "Volkswagen",
-    "fuel": "Petrol",
-    "seats": 5,
-    "price": 17000,
-    "image": "/images/car3.webp"
+    "image": "/images/car1_tata.jpg",
+    "description": "An off-road SUV with a bold and rugged design.",
+    "model": "Thar LX",
+    "year": 2023,
+    "availableColors": ["Red", "Black", "Green"]
   }
 ]

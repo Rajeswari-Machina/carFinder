@@ -44,6 +44,12 @@ export default function CarCard({ car }) {
               onClick={handleWishlist}
             />
           </div>
+          <Typography variant="subtitle1" sx={{ fontWeight: 600, color: "#2e7d32", marginBottom: "5px" }}>
+          ₹{car.price}/- Only
+        </Typography>
+        <Typography variant="subtitle1" sx={{ fontWeight: 600, color: "blue", marginBottom: "5px" }}>
+          Available in {car.availableColors.join(',')} colors 
+        </Typography>
           <Typography variant="body2" color="text.secondary">
             {car.description}
           </Typography>

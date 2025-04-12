@@ -23,7 +23,8 @@ export default function Home({ toggleTheme, mode }) {
     setCurrentPage(pageNumber);
   };
   
-  const isSmallScreen = useMediaQuery('(max-width:800px)');
+  const isSmallScreen = useMediaQuery('(min-width:600px) and (max-width:800px)');
+  const isMobile = useMediaQuery('(max-width:600px)');
   React.useEffect(() => {
     const fetchInitialCars = async() => {
       
@@ -70,7 +71,7 @@ export default function Home({ toggleTheme, mode }) {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: isSmallScreen ? "repeat(2, 1fr)" : "repeat(3, 1fr)",
+          gridTemplateColumns:isMobile?"repeat(1, 1fr)": isSmallScreen ? "repeat(2, 1fr)" : "repeat(3, 1fr)",
           gap: "20px",
         }}
       >

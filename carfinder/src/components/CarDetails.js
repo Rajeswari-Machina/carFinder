@@ -45,7 +45,7 @@ export default function CarDetails({ toggleTheme, mode }) {
       </Typography>
       <Card
         sx={{
-          maxWidth: 600,
+          width: "100%",
           boxShadow: 3,
           bgcolor: isDark ? '#444' : '#fff',
           color: isDark ? '#fff' : '#000',

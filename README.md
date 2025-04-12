@@ -6,7 +6,7 @@ A sleek and responsive **Car Finder Web Application** built using **Next.js** an
 
 🔗 **[Live Demo](https://car-finder-bk.vercel.app/)** 
 
-![Website Preview](https://your-preview-image-url.com) 
+![Website Preview](https://youtu.be/1x6LfOhUv20?si=ryU7pzOpQvA6rKdQ)
 
 ---
 
